@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit person</title>
+</head>
+<body>
+
+<form th:method="PATCH" th:action="@{/x/{id} (id=${person.getId()})}" th:object="${person}">
+
+<input type="text" th:field="*{name}"/>
+<input type="submit"/>
+
+</form>
+
+</body>
+</html>
